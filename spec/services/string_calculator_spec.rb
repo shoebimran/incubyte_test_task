@@ -20,5 +20,13 @@ RSpec.describe StringCalculator do
     it 'returns the sum of multiple numbers' do
       expect(StringCalculator.add('1,2,3,4')).to eq(10)
     end
+
+    it 'supports custom delimiters' do
+      expect(StringCalculator.add("//;\n1;2")).to eq(3)
+    end
+
+    it 'raises an error for negative numbers' do
+      expect { StringCalculator.add('1,-2,3,-4') }.to raise_error('negatives not allowed: -2,-4')
+    end
   end
 end
