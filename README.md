@@ -2,7 +2,7 @@
 
 ## Set up the project
 #### Clone the Repo:   
-`git clone https://github.com/ahmadadnan1602/incubyte_test_task.git`
+`git clone https://github.com/shoebimran/incubyte_test_task.git`
 
 #### change the directory:   
 
